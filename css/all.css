@@ -1,0 +1,397 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset end */
+
+/* 共用 */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+img {
+  display: block;
+}
+
+.content h2 {
+  font-size: 32px;
+  line-height: 45px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 16px;
+}
+
+.content span {
+  font-size: 24px;
+  line-height: 32px;
+  color: #A00404;
+  margin-left: 16px;
+  font-weight: 500;
+}
+
+.list {
+  margin-left: 24px;
+  padding-left: 24px;
+}
+
+.list-item {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+/* header */
+.header {
+  border-bottom: 2px solid #000;
+  padding-bottom: 24px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  font-size: 80px;
+  line-height: 90px;
+}
+
+/* profile */
+.profile-image {
+  margin-bottom: 48px;
+}
+
+.profile .pro-list {
+  position: relative;
+  margin-bottom: 72px;
+}
+
+.profile .pro-list::before {
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  background: #96A9C4;
+}
+
+.profile .pro-list li {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  padding-left: 49px;
+}
+
+/* education */
+.ed-list {
+  position: relative;
+  margin-bottom: 72px;
+}
+
+.ed-list::before {
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  background: #96A9C4;
+  z-index: 3;
+}
+
+.ed-list::after {
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 78px;
+  left: -8px;
+  background: #96A9C4;
+  z-index: 3;
+}
+
+.ed-list-item {
+  position: relative;
+}
+
+.ed-list-item:first-child::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #96A9C4;
+  top: 50%;
+  left: -25px;
+  z-index: 1;
+}
+
+.ed-list-item:last-child::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #96A9C4;
+  top: -50%;
+  left: -25px;
+  z-index: 1;
+}
+
+/* skill */
+.skill {
+  height: 415px;
+  color: #fff;
+  background-color: #415165;
+  padding: 24px 0 0 0;
+  position: relative;
+  margin-bottom: 72px;
+  padding-bottom: 55px;
+}
+
+.skill::after {
+  content: '';
+  position: absolute;
+  height: 360px;
+  width: 999999999px;
+  background-color: #96A0C4;
+  top: 67px;
+  left: -999999px;
+  z-index: -1;
+}  
+
+.skill h2 {
+  width: 996px;
+  font-size: 32px;
+  line-height: 45px;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  font-weight: 500;
+}
+
+.skill span {
+  font-size: 24px;
+  margin-left: 16px;
+}
+
+.skill-list {
+  width: 216px;
+  margin: 0 auto;
+  border-left: 1px solid #96a9c4;
+  padding-left: 24px;
+}
+
+.skill-list-item {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+/* work experience */
+.work-ex-list {
+  position: relative;
+  margin-bottom: 72px;
+}
+
+.work-ex-list::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 674px;
+  background-color: #96A9C4;
+  top: 0px;
+  left: 0px;
+}
+
+.work-ex ul li img {
+  margin: 8px 0;
+}
+
+.work-ex ul li p {
+  font-size: 20px;
+  line-height: 30px;
+  width: 642px;
+  font-weight: 200;
+}
+
+
+/* footer */
+.contact {
+  background: #415165;
+  color: #fff;
+  text-align: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+  padding-top: 24px;
+  margin-bottom: 31px;
+}
+
+.contact .text h2 {
+  font-size: 32px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.contact .text span {
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 16px;
+}
+
+.contact-list {
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 48px;
+}
+
+.contact-list-item {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 16px;
+  font-weight: 200;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.img-list {
+  margin-left: 24px;
+}
